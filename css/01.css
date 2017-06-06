@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/** 变量类型 */
+ul { height: 500px; }
+
+li { width: 200px; }
+
+p { width: 200px; }
+
+li { padding: 5px 10px 5px 10px; padding-left: 5px; background: red; }
+
+.min { color: red; position: absolute; }
+
+/*# sourceMappingURL=01.css.map */

@@ -1,0 +1,6 @@
+/*test scss*/
+body { background: #589; }
+body ul { width: 200px; height: 150px; background: red; }
+body ul li { color: #589; border-bottom: 1px solid #589; }
+
+/*# sourceMappingURL=index.css.map */

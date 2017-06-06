@@ -1,0 +1,32 @@
+$w:300px;
+$h:50px;
+$bgColor: #8ddedd #93EB7E #FB241C;
+$bgBorder: #2d9ea2 #338d1f #9f2100;
+$borderRadius:2px;
+
+body{
+  div{
+    width: $w;
+    height: $h;
+    border-radius: $borderRadius;
+    line-height: $h;
+    text-align: center;
+    margin: 15px;
+  }
+}
+/*提示框*/
+.info{
+  background: nth($bgColor,1);
+  border: 1px solid nth($bgBorder,1);
+  color: nth($bgBorder,1);
+}
+.success{
+  background: nth($bgColor,2);
+  border: 1px solid nth($bgBorder,2);
+  color: nth($bgBorder,2);
+}
+.error{
+  background: nth($bgColor,3);
+  border: 1px solid nth($bgBorder,3);
+  color: nth($bgBorder,3);
+}

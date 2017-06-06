@@ -1,0 +1,96 @@
+/**
+    嵌套
+ */
+
+
+// 选择器嵌套
+body{
+  background: red;
+  header{
+    background: darkblue;
+  }
+}
+
+// 属性嵌套
+footer{
+  background: {
+    position: 50px 80px;
+    size: 150px;
+    color: #2d9ea2;
+  };
+}
+
+// 引用父选择器 &
+a{
+  color:red;
+  &:hover{
+    color: blueviolet;
+  }
+  &.content{
+    color: #8ddedd;
+  }
+}
+
+
+
+/**
+    继承
+ */
+
+// 单个继承  占位选择器%
+%alert{
+  background: red;
+}
+.info{
+  @extend %alert;
+  color: white;
+}
+
+// 多个继承
+.extend1{
+  background: red;
+}
+.extend2{
+  color: darkseagreen;
+}
+.content{
+  @extend .extend1,.extend2;
+}
+
+// 链型继承
+
+// 多个继承
+.extend1{
+  background: red;
+}
+.extend2{
+  color: darkseagreen;
+}
+.content{
+  @extend .extend1,.extend2;
+}
+
+// 链型继承
+.aa{
+  background: red;
+}
+.bb{
+  @extend .aa;
+  color: red;
+}
+.cc{
+  @extend .bb;
+  color: #2d9ea2;
+}
+
+// @media 继承
+@media screen and (max-width: 600px){
+  .t{
+    color: red;
+  }
+  .test{
+    @extend .t;
+    background: mediumvioletred;
+  }
+}
+

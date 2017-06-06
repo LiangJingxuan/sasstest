@@ -1,0 +1,43 @@
+/**
+    变量类型
+ */
+
+
+$paddingnum:5px 10px 5px 10px;  // 多值变量
+$map:(color:red,background:red);  // map类型变量
+
+
+$className:min; // class 名字定义变量
+$p:position;  // 属性定义变量
+
+
+ul{
+  $h:500px; // 局部变量
+  height: $h;
+}
+
+li{
+  $w:200px !global; // 全局变量
+  width: $w;
+}
+
+p{
+  width: $w;
+}
+
+
+li{
+  padding: $paddingnum;
+  padding-left: nth($paddingnum,1); // 取多值
+
+
+  background:map_get($map,color); // 使用map类型
+}
+
+.#{$className}{     // class 名字定义变量的使用
+  color: map_get($map,color);
+
+
+
+  #{$p}:absolute;   // 属性定义变量的使用
+}

@@ -1,0 +1,76 @@
+/**
+    数据类型
+ */
+
+// 数字
+$n1:1; $n2:1.5; $n3:15px; $n4:7rem;
+
+li{
+  font-size: $n3;
+}
+
+// 字符串
+$s1:min; $s2:'min'; $s3:"min";
+
+##{$s3}{
+  color: red;
+}
+
+// 颜色
+$c1:blue; $c2:#581; $c3:rgba(255,255,2,0.7);
+
+// boolean
+$b1:true; $b2:false;
+
+// null
+$null:null;
+
+// list (重点)
+
+// map (重点)
+
+
+/**
+    运算符号   ==  !=  <  >  <=  >=  +  -  *  /  %
+ */
+$width:15px;
+$height:15px;
+
+p{
+  width: $width + $height;
+}
+
+
+/**
+    MinXin 定义片段
+ */
+
+// 单个参数传递
+@mixin fragment($color:red,$font_size:14px){
+  color: $color;
+  font-size: $font_size;
+}
+
+body{
+  @include fragment($font_size:15px);
+}
+
+// 多个参数传递
+@mixin  fragment2($shadow...){
+  -moz-box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+.shadow{
+  @include fragment2(5px 4px 7px #555,4px 5px 6px #666);
+}
+
+// 传递内容 (重点)
+@mixin style-for-iphone{
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px){
+    @content;
+  }
+}
+@include style-for-iphone{
+  /* 样式内容 */
+}

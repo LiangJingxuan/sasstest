@@ -1,0 +1,16 @@
+$backColor:#589;
+/*test scss*/
+body{
+  background:$backColor;
+  ul{
+    $width:200px;
+    $height:150px;
+    width: $width;
+    height: $height;
+    background: red;
+    li{
+      color:$backColor;
+      border-bottom:1px solid $backColor;
+    }
+  }
+}

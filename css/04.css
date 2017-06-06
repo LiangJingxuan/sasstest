@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/** 数据类型 */
+li { font-size: 15px; }
+
+#min { color: red; }
+
+/** 运算符号   ==  !=  <  >  <=  >=  +  -  *  /  % */
+p { width: 30px; }
+
+/** MinXin 定义片段 */
+body { color: red; font-size: 15px; }
+
+.shadow { -moz-box-shadow: 5px 4px 7px #555, 4px 5px 6px #666; -webkit-box-shadow: 5px 4px 7px #555, 4px 5px 6px #666; box-shadow: 5px 4px 7px #555, 4px 5px 6px #666; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) { /* 样式内容 */ }
+
+/*# sourceMappingURL=04.css.map */

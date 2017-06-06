@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/** 嵌套 */
+body { background: red; }
+body header { background: darkblue; }
+
+footer { background-position: 50px 80px; background-size: 150px; background-color: #2d9ea2; }
+
+a { color: red; }
+a:hover { color: blueviolet; }
+a.content { color: #8ddedd; }
+
+/** 继承 */
+.info { background: red; }
+
+.info { color: white; }
+
+.extend1, .content { background: red; }
+
+.extend2, .content { color: darkseagreen; }
+
+.extend1, .content { background: red; }
+
+.extend2, .content { color: darkseagreen; }
+
+.aa, .bb, .cc { background: red; }
+
+.bb, .cc { color: red; }
+
+.cc { color: #2d9ea2; }
+
+@media screen and (max-width: 600px) { .t, .test { color: red; }
+  .test { background: mediumvioletred; } }
+
+/*# sourceMappingURL=03.css.map */

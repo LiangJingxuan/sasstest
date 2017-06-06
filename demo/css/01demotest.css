@@ -1,0 +1,11 @@
+@charset "UTF-8";
+body div { width: 300px; height: 50px; border-radius: 2px; line-height: 50px; text-align: center; margin: 15px; }
+
+/*提示框*/
+.info { background: #8ddedd; border: 1px solid #2d9ea2; color: #2d9ea2; }
+
+.success { background: #93EB7E; border: 1px solid #338d1f; color: #338d1f; }
+
+.error { background: #FB241C; border: 1px solid #9f2100; color: #9f2100; }
+
+/*# sourceMappingURL=01demotest.css.map */
