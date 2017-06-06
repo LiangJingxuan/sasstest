@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/** 条件控制 */
+body { color: red; }
+
+span { color: #8ddedd; }
+
+.span1 { width: 20%; }
+
+.span2 { width: 40%; }
+
+.span3 { width: 60%; }
+
+.span4 { width: 80%; }
+
+.span5 { width: 100%; }
+
+.p6 { width: 120%; }
+
+.p3 { width: 60%; }
+
+.div1 { color: blue; }
+
+.div2 { color: red; }
+
+.div3 { color: green; }
+
+.text_default { color: blue; }
+
+.text_info { color: green; }
+
+.text_danger { color: red; }
+
+.label_default { color: blue; }
+
+.label_info { color: green; }
+
+.label_danger { color: red; }
+
+/*# sourceMappingURL=06.css.map */
