@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/** 函数 */
+/*1 颜色函数- 颜色值*/
+body { color: rgba(255, 255, 0, 0.5); }
+
+/*2 颜色函数- 加深颜色 变浅颜色*/
+div { color: #f5f500; background: #ffff0a; }
+
+/*3 字符串函数- 字符串长度 字符串索引*/
+p { z-index: 2; z-index: 4; }
+
+p { width: 10px; }
+
+/*# sourceMappingURL=05.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAAA,SAEG;AAMC,eAAe;AACf,IAAI,GAEF,KAAK,EAAE,sBAAe;;AAGxB,qBAAqB;AACrB,GAAG,GACD,KAAK,EAAE,OAAgB,EACvB,UAAU,EAAE,OAAiB;;AAG/B,wBAAwB;AACxB,CAAC,GACC,OAAO,EAAE,CAAgB,EACzB,OAAO,EAAE,CAAuB;;AAYlC,CAAC,GACC,KAAK,EAAE,IAAW",
+"sources": ["../sass/05.scss"],
+"names": [],
+"file": "05.css"
+}

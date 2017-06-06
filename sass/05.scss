@@ -1,0 +1,48 @@
+/**
+    函数
+ */
+
+$color: rgb(255,255,0); $o:0.5;
+
+// 内置函数
+
+    /*1 颜色函数- 颜色值*/
+    body{
+      //background: rgb($color);
+      color: rgba($color,$o);
+    }
+
+    /*2 颜色函数- 加深颜色 变浅颜色*/
+    div{
+      color: darken($color,2);
+      background: lighten($color,2);
+    }
+
+    /*3 字符串函数- 字符串长度 字符串索引*/
+    p{
+      z-index: str_length('aa');
+      z-index: str_index('abcdef','d');
+    }
+
+
+
+
+// 自定义函数
+
+    @function double($width){
+      @return $width * 2;
+    }
+
+    p{
+      width: double(5px);
+    }
+
+
+
+
+
+// 调试方法
+
+    // @debug 'this is a debug test';
+    // @warn 'this is a warn test';
+    // @error 'this is a error tesr';
