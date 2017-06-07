@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": ";AAAA,sBAEG;AAiBC,KAAQ,GACN,KAAK,EAAE,GAAM;;AADf,KAAQ,GACN,KAAK,EAAE,GAAM;;AADf,KAAQ,GACN,KAAK,EAAE,GAAM;;AADf,KAAQ,GACN,KAAK,EAAE,IAAM",
+"sources": ["../sass/07.scss"],
 "names": [],
 "file": "07.css"
 }
