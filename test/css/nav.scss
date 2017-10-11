@@ -1,0 +1,11 @@
+@import "variate";
+.nav{
+  width: $navWIDTH;
+  height: $navHEIGHT;
+  background: $navBackGround;
+  $color: #587;
+  color: $color;
+}
+.header{
+  width: $headerWIDTH;
+}

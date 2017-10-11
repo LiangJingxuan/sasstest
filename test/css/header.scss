@@ -1,0 +1,64 @@
+@import "variate";
+@import "mixin";
+
+.oop{
+  background: $navBackGround;
+  border: $border;
+}
+$color:#345;
+$borderHeader:5px solid $color;
+.bug{
+  $position-left:absolute;
+  border: $borderHeader;
+  position: $position-left;
+}
+
+#content{
+  .list{
+    border: $border;
+    width: $navWIDTH;
+    li{
+      width: $navWIDTH;
+      height: $navHEIGHT;
+    }
+  }
+  .JQK{
+    border: $border;
+    width: $navHEIGHT;
+    a{
+      color: $navBackGround;
+      & .JQKA:hover{
+        color: $navBackGround;
+      }
+    }
+  }
+  .OPQ{
+    h1,h2,p{
+      position: absolute;
+    }
+  }
+  .iop .abbr{
+    a,span{
+      color: $color;
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+/*mixin*/
+.content-box, .aps{
+  @include bordercommon-radius;
+  width: $navHEIGHT;
+}
+.nav-box{
+  @include bordercommon-radius;
+  @include opacity-common(0.7,70);
+  .aas{
+    @include opacity-common(0.4,40);
+  }
+}
+/*@extend*/
+.news-list{
+  border: $border;
+  @extend .nav-box;
+}

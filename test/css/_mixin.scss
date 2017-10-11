@@ -1,0 +1,11 @@
+@mixin bordercommon-radius {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+@mixin opacity-common($opacityVal,$opacityValIE) {
+  filter:alpha(opacity=$opacityValIE);
+  -moz-opacity:$opacityVal;
+  -khtml-opacity: $opacityVal;
+  opacity: $opacityVal;
+}

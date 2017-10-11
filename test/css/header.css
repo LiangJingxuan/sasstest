@@ -1,0 +1,22 @@
+.oop { background: #ccc; border: 1px solid red; }
+
+.bug { border: 5px solid #345; position: absolute; }
+
+#content .list { border: 1px solid red; width: 150px; }
+#content .list li { width: 150px; height: 20px; }
+#content .JQK { border: 1px solid red; width: 20px; }
+#content .JQK a { color: #ccc; }
+#content .JQK a .JQKA:hover { color: #ccc; }
+#content .OPQ h1, #content .OPQ h2, #content .OPQ p { position: absolute; }
+#content .iop .abbr a, #content .iop .abbr span { color: #345; }
+
+/*mixin*/
+.content-box, .aps { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; width: 20px; }
+
+.nav-box, .news-list { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; filter: alpha(opacity=70); -moz-opacity: 0.7; -khtml-opacity: 0.7; opacity: 0.7; }
+.nav-box .aas, .news-list .aas { filter: alpha(opacity=40); -moz-opacity: 0.4; -khtml-opacity: 0.4; opacity: 0.4; }
+
+/*@extend*/
+.news-list { border: 1px solid red; }
+
+/*# sourceMappingURL=header.css.map */
