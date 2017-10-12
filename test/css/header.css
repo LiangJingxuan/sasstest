@@ -1,40 +1,76 @@
-/*
-Error: Invalid GBK character "\xE5"
-        on line 127 of css/header.scss
+.oop { background: #ccc; border: 1px solid red; }
 
-122: /*mixin*\/
-123: .ol{
-124:   @include border-style(red,5px);
-125: }
-126: 
-127: // 9.3.1. 关键词参数 (Keyword Arguments) ->
+.bug { border: 5px solid #345; position: absolute; }
 
-Backtrace:
-css/header.scss:127
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/util.rb:1325:in `rescue in block in find_encoding_error'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/util.rb:1322:in `block in find_encoding_error'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/util.rb:1321:in `each'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/util.rb:1321:in `each_with_index'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/util.rb:1321:in `find_encoding_error'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/util.rb:930:in `check_sass_encoding'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/engine.rb:436:in `check_encoding!'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/engine.rb:392:in `_to_tree'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `call'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-D:/Toos/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid GBK character \"\xE5\"\A         on line 127 of css/header.scss\A \A 122: /*mixin*/\A 123: .ol{\A 124:   @include border-style(red,5px);\A 125: }\A 126: \A 127: // 9.3.1. 关键词参数 (Keyword Arguments) ->"; }
+#content .list { border: 1px solid red; width: 150px; }
+#content .list li { width: 150px; height: 20px; }
+#content .JQK { border: 1px solid red; width: 20px; }
+#content .JQK a { color: #ccc; }
+#content .JQK a .JQKA:hover { color: #ccc; }
+#content .OPQ h1, #content .OPQ h2, #content .OPQ p { position: absolute; }
+#content .iop .abbr a, #content .iop .abbr span { color: #345; width: auto; }
+
+/*mixin*/
+.content-box, .aps { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; width: 20px; }
+
+.nav-box, .news-list { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; filter: alpha(opacity=70); -moz-opacity: 0.7; -khtml-opacity: 0.7; opacity: 0.7; }
+.nav-box .aas, .news-list .aas { filter: alpha(opacity=40); -moz-opacity: 0.4; -khtml-opacity: 0.4; opacity: 0.4; }
+
+/*@extend*/
+.news-list { border: 1px solid red; }
+
+/*control directives*/
+p { color: #2d9ea2; }
+
+/*through*/
+.item-1 { width: 2em; }
+
+.item-2 { width: 4em; }
+
+.item-3 { width: 6em; }
+
+/*to*/
+.list-1 { height: 3px; }
+
+.list-2 { height: 4px; }
+
+.list-3 { height: 5px; }
+
+/*each*/
+.aps-item { background: url(img/aps.png); }
+
+.js-item { background: url(img/js.png); }
+
+.php-item { background: url(img/php.png); }
+
+.noide-item { background: url(img/noide.png); }
+
+.java-item { background: url(img/java.png); }
+
+.c-item { background: url(img/c.png); }
+
+/*eacj2*/
+.puma-icon { background-image: url("/images/puma.png"); border: 2px solid black; cursor: default; }
+
+.sea-slug-icon { background-image: url("/images/sea-slug.png"); border: 2px solid blue; cursor: pointer; }
+
+.egret-icon { background-image: url("/images/egret.png"); border: 2px solid white; cursor: move; }
+
+/*each3*/
+h1 { font-size: 2em; }
+
+h2 { font-size: 1.5em; }
+
+h3 { font-size: 1.2em; }
+
+/*@while*/
+.list-6 { font-size: 12em; }
+
+.list-4 { font-size: 8em; }
+
+.list-2 { font-size: 4em; }
+
+/*mixin*/
+.ol { border-color: red; border-width: 5px; }
+
+/*# sourceMappingURL=header.css.map */
