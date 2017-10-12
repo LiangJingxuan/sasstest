@@ -9,3 +9,8 @@
   -khtml-opacity: $opacityVal;
   opacity: $opacityVal;
 }
+@mixin border-style($color,$width){
+  border:{
+    color:$color; width: $width;
+  }
+}

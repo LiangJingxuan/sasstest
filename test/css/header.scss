@@ -40,6 +40,7 @@ $borderHeader:5px solid $color;
   .iop .abbr{
     a,span{
       color: $color;
+      width: auto;
     }
   }
 }
@@ -62,3 +63,91 @@ $borderHeader:5px solid $color;
   border: $border;
   @extend .nav-box;
 }
+
+//////////////////////////////////////////////////////////////////////////////
+/*control directives*/
+
+// @if
+p{
+  @if($navWIDTH>$bodyHEIGHT){
+    color: #2d9ea2;
+  }@else if($navHEIGHT<$bodyWIDTH){
+    color: #9f2100;
+  }@else{
+    color: #93EB7E;
+  }
+}
+
+//@for
+/*through*/
+@for $i from 1 through 3{
+  .item-#{$i} {width: 2em * $i}
+}
+/*to*/
+@for $i from 1 to 4{
+  .list-#{$i} {height: 2px + $i}
+}
+
+// @each
+/*each*/
+@each $picurl in aps,js,php,noide,java,c{
+  .#{$picurl}-item{
+    background: url(img/#{$picurl}.png);
+  }
+}
+/*eacj2*/
+@each $animal, $color, $cursor in (puma, black, default), (sea-slug, blue, pointer), (egret, white, move) {
+  .#{$animal}-icon {
+    background-image: url('/images/#{$animal}.png');
+    border: 2px solid $color;
+    cursor: $cursor;
+  }
+}
+/*each3*/
+@each $header, $size in (h1: 2em, h2: 1.5em, h3: 1.2em) {
+  #{$header} {
+    font-size: $size;
+  }
+}
+
+// @while
+/*@while*/
+$i:6;
+@while($i>0){
+  .list-#{$i}{
+    font-size: 2em * $i;
+    $i: $i - 2;
+  }
+}
+/*mixin*/
+.ol{
+  @include border-style(red,5px);
+}
+
+// 9.3.1. 关键词参数 (Keyword Arguments) ->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
